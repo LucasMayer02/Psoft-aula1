@@ -2,5 +2,12 @@ package aula1;
 
 public class Lote {
 	private int qtd;
-	Produto prod;
+	private int data;
+	private Produto prod;
+	
+	public Lote(int qtd, int data, Produto prod) {
+		this.qtd = qtd;
+		this.data = data;
+		this.prod = prod;
+	}
 }
