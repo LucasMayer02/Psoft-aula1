@@ -1,4 +1,5 @@
 package aula1;
+import java.util.*;
 
 public class Lote {
 	private int qtd;
@@ -9,5 +10,13 @@ public class Lote {
 		this.qtd = qtd;
 		this.data = data;
 		this.prod = prod;
+	}
+	
+	@Override
+	public String toString() {
+		String descricao = "Quantidade: " + this.qtd + "; ";
+		descricao += "Data: " + this.data + "; ";
+		descricao += "Produto: (" + this.prod + ")";
+		return descricao;
 	}
 }

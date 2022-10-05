@@ -12,4 +12,11 @@ public class Produto {
 		this.preco = preco;
 	}
 	
+	@Override
+	public String toString() {
+		String descricao = "Nome: " + this.nome +"; ";
+		descricao += "Fabricante: " + this.fabricante + "; ";
+		descricao += "Preço: " + this.preco + "; ";
+		return descricao;
+	}
 }
